@@ -10,7 +10,10 @@ export default function Home({ navigation }) {
     ])
 
     const onPressHandler = () => {
-        navigation.navigate('Details')
+        navigation.navigate('Details', {
+            rating: reviews[].rating
+            // rating: reviews[0].rating
+        });
     }
 
     return (
