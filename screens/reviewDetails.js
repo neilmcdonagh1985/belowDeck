@@ -8,6 +8,7 @@ export default function ReviewDetails({ route, navigation }) {
     return (
         <View>
             <Text>{route.params.rating}</Text>
+            <Text>{route.params.body}</Text>
         </View>
     )
 
