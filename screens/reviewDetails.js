@@ -3,10 +3,11 @@ import { Style, View, Text, Button } from 'react-native';
 import { globalStyles } from '../styles/global';
 
 
-export default function ReviewDetails({ route, navigation }) {
+export default function ReviewDetails({ route }) {
 
     return (
-        <View>
+        <View style={globalStyles.titleText}>
+            <Text>{route.params.title}</Text>
             <Text>{route.params.rating}</Text>
             <Text>{route.params.body}</Text>
         </View>
