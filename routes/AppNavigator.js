@@ -7,8 +7,9 @@ import ReviewDetails from "../screens/reviewDetails";
 const Stack = createStackNavigator();
 
 export const AppNavigator = () => (
-    <NavigationContainer initialRouteName='Home'>
         <Stack.Navigator
+            initialRouteName='Home'
+            initialRouteName='Home'
             screenOptions={{
                 headerStyle: {
                     backgroundColor: '#00bfff',
@@ -19,7 +20,6 @@ export const AppNavigator = () => (
             <Stack.Screen name="Home" component={Home} options={{ title: "Home"}} />
             <Stack.Screen name="Details" component={ReviewDetails} options={{ title: "Details"}}/>
         </Stack.Navigator>
-    </NavigationContainer>
 )
 
 
