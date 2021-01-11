@@ -6,9 +6,9 @@ import { FlatList } from 'react-native-gesture-handler';
 
 export default function Home({ navigation }) {
     const [reviews, setReviews] = useState([
-        { title: 'Hotel Pyramida', rating: 4, body: 'nice decor and mostly clean and good haircuts', key: 1 },
-        { title: 'The Globe', rating: 4, body: 'Barman talked about movies too much', key: 2 },
-        { title: 'The Red Rooms', rating: 3, body: 'Not enough people in the Irish band were Irish', key: 3 },
+        { title: 'Hotel Pyramida', rating: 4, body: 'nice decor and mostly clean and good haircuts', key: 'One' },
+        { title: 'The Globe', rating: 4, body: 'Barman talked about movies too much', key: 'Two' },
+        { title: 'The Red Rooms', rating: 3, body: 'Not enough people in the Irish band were Irish', key: 'Three' },
     ])
 
     // const onPressHandler = (review) => {
