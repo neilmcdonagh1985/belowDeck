@@ -9,10 +9,10 @@ const Stack = createStackNavigator();
 export const AppNavigator = () => (
         <Stack.Navigator
             initialRouteName='Home'
-            initialRouteName='Home'
             screenOptions={{
                 headerStyle: {
                     backgroundColor: '#00bfff',
+                    height: 80
                 },
                 headerTintColor: '#2f44f4'
             }}

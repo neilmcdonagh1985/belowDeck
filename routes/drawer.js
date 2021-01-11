@@ -10,8 +10,8 @@ const Drawer = createDrawerNavigator();
 const RootDrawerNavigator = () => {
     return (
         <Drawer.Navigator>
-            <Drawer.Screen name="AppNavigator" component={AppNavigator} />
-            <Drawer.Screen name="AboutStack" component={AboutStack} />
+            <Drawer.Screen name="Home" component={AppNavigator} />
+            <Drawer.Screen name="About" component={AboutStack} />
         </Drawer.Navigator>
     );
 }
