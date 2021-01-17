@@ -21,7 +21,7 @@ export const AppNavigator = () => (
             {/* <Stack.Screen name="Home" component={Home} options={{ title: "Home"}} /> */}
             {/* <Stack.Screen name="Home" component={Home} options={{ title: <Header></Header>}} /> */}
             {/* <Stack.Screen name="Home" component={Home} options={{ headerTitle: props => <Header />}} /> */}
-            <Stack.Screen name="Home" component={Home} options={{ header: props => <Header />}} />
+            <Stack.Screen name="Home" component={Home} options={{ header: () => <Header />}} />
             <Stack.Screen name="Details" component={ReviewDetails} options={{ title: "Details"}}/>
         </Stack.Navigator>
 )
