@@ -1,17 +1,15 @@
 import * as React from 'react';
 import { Style, View, Text, StyleSheet } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+import { DrawerActions } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Header() {
+    const navigation = useNavigation();
 
-    const openMenu = () => {
-        // navigation.openDrawer()
-    }
-
-    
     return (
         <View style={headerStyles.bar}>
-            <MaterialIcons name='menu' size={28} onPress={openMenu} style={headerStyles.icon}/>
+            <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={() => navigation.openDrawer()} />
 
             <Text>this is the header</Text>           
         </View>
@@ -28,5 +26,6 @@ const headerStyles = StyleSheet.create({
     icon: {
         position: 'absolute',
         left: 16
+        
     } 
 })
