@@ -3,12 +3,13 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { globalStyles } from '../styles/global';
 import { StackRouter } from 'react-navigation';
 import { FlatList } from 'react-native-gesture-handler';
+import Card from '../shared/card';
 
 export default function Home({ navigation }) {
     const [reviews, setReviews] = useState([
-        { title: 'Hotel Pyramida', rating: 4, body: 'nice decor and mostly clean and good haircuts', key: 'One' },
-        { title: 'The Globe', rating: 4, body: 'Barman talked about movies too much', key: 'Two' },
-        { title: 'The Red Rooms', rating: 3, body: 'Not enough people in the Irish band were Irish', key: 'Three' },
+        { title: 'August 21', rating: 4, body: 'Hipsters little bit', key: 'One' },
+        { title: 'The Beaten Dockett', rating: 4, body: 'Loud mad fellas in corner', key: 'Two' },
+        { title: 'City Cafe', rating: 3, body: 'Americany looking and beer and burgers', key: 'Three' },
     ])
 
     // const onPressHandler = (review) => {
@@ -25,7 +26,9 @@ export default function Home({ navigation }) {
             data={reviews}
             renderItem={({ item }) =>
                 <TouchableOpacity onPress={() => navigation.navigate('Details', item)}>
+                    <Card>
                     <Text style={globalStyles.titleText}>{item.title}</Text>
+                    </Card>
                 </TouchableOpacity>}
         />
 
