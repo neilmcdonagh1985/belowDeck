@@ -16,6 +16,6 @@ export const AboutStack = () => (
                 headerTintColor: '#2f44f4'
             }}
             >
-            <Stack.Screen name="About" component={About} options={{ header: () => <Header />}} />            
+            <Stack.Screen name="About" component={About} options={{ header: () => <Header title='About Revive'/>}} />            
         </Stack.Navigator>
 )

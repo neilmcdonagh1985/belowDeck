@@ -4,14 +4,19 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { DrawerActions } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Header() {
+export default function Header({ title }) {
     const navigation = useNavigation();
+
+    const openMenu = () => {
+        navigation.openDrawer();
+    }
 
     return (
         <View style={headerStyles.bar}>
-            <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={() => navigation.openDrawer()} />
+            {/* <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={() => navigation.openDrawer()} /> */}
+            <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={openMenu} />
 
-            <Text>this is the header</Text>           
+            <Text>{ title }</Text>           
         </View>
     )
 }
