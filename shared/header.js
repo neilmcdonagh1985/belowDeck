@@ -30,7 +30,8 @@ const headerStyles = StyleSheet.create({
     },
     icon: {
         position: 'absolute',
-        left: 16
+        left: 18,
+        color: '#fff'
         
     } 
 })

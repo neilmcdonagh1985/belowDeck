@@ -10,8 +10,8 @@ export default function ReviewDetails({ route }) {
         <View style={globalStyles.titleText}>
             <Card>
             <Text>{route.params.title}</Text>
-            <Text>{route.params.rating}</Text>
             <Text>{route.params.body}</Text>
+            <Text>{route.params.rating}</Text>           
             </Card>
         </View>
     )
