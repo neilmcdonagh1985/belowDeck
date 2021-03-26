@@ -30,8 +30,14 @@ const headerStyles = StyleSheet.create({
         backgroundColor: '#fa8072',
         height: 80,
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        
         alignItems: 'center',
+        flexDirection: 'row',
+        
+        width: '100%',
+        alignContent: 'center',
+        justifyContent: 'flex-end'
+        
         // justifyContent: 'space-evenly'        
     },
     icon: {
@@ -40,11 +46,13 @@ const headerStyles = StyleSheet.create({
         color: '#fff'
         
     },
-    text: {
-        
+    text: {       
         fontFamily: 'nunito-bold',
-        fontSize: 15,
-        paddingLeft: 15
+        fontSize: 18,
+        paddingRight: 50,
+        color: '#4b4f4d'
+        
+        
     //     paddingRight: 60
     }
 

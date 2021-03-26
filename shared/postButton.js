@@ -20,15 +20,19 @@ export default function PostButton() {
 
 const postButtonStyles = StyleSheet.create({
     buttonContainer: {        
-        backgroundColor: '#fcdc00',
-        backgroundColor: '#009688',
-        borderRadius: 6,
-        paddingVertical: 8,
-        paddingHorizontal: 8,
+        // backgroundColor: '#fcdc00',
+        backgroundColor: '#4b4f4d',
+        height: '100%',
+        justifyContent: 'center',
+        padding: 5
         
+
+
     },
     buttonText: {
-        fontSize: 12
+        fontFamily: 'nunito-bold',
+        fontSize: 15,
+        color: '#fa8072'
     }
 
 })
