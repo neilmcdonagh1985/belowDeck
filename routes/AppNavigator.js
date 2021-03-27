@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "../screens/home";
 import ReviewDetails from "../screens/reviewDetails";
 import Header from '../shared/header';
+import PostForm from "../screens/postForm";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ export const AppNavigator = () => (
             {/* <Stack.Screen name="Home" component={Home} options={{ headerTitle: props => <Header />}} /> */}
             <Stack.Screen name="Home" component={Home} options={{ header: () => <Header title='Revive' />}} />
             <Stack.Screen name="Details" component={ReviewDetails} options={{ title: "Details"}}/>
+            <Stack.Screen name="PostForm" component={PostForm} options={{ title: "PostForm"}} />
         </Stack.Navigator>
 )
 

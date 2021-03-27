@@ -9,12 +9,17 @@ import { View, Button, StyleSheet, TouchableOpacity, Text } from 'react-native';
 //     )
 // }
 
-export default function PostButton() {
+export default function PostButton({ navigation }) {
+
+    
+
 
     return (
-        <TouchableOpacity style={postButtonStyles.buttonContainer}>
+        
+        // in touchableopacity below: onPress={() => navigation.navigate('PostForm', item)}
+        <View style={postButtonStyles.buttonContainer} >
             <Text style={postButtonStyles.buttonText}>Post Review</Text>
-        </TouchableOpacity>
+        </View>
     )
 }
 

@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { Style, View, Text, StyleSheet, Button } from 'react-native';
+import { Style, View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { DrawerActions } from '@react-navigation/native';
 import { useNavigation } from '@react-navigation/native';
 import PostButton from '../shared/postButton';
+import PostForm from '../screens/postForm';
 
 
 export default function Header({ title }) {
@@ -13,13 +14,25 @@ export default function Header({ title }) {
         navigation.openDrawer();
     }
 
+    const openPostForm = () => {
+        navigation.navigate('PostForm')
+    }
+
+    // const openPostForm = () => {
+    //     navigation.navigate('PostForm')
+
+    // }
+
     return (
         <View style={headerStyles.bar}>
             {/* <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={() => navigation.openDrawer()} /> */}
             <MaterialIcons name='menu' size={28} style={headerStyles.icon} onPress={openMenu} />
 
             <Text style={headerStyles.text}>{ title }</Text>
-            <PostButton />
+            <TouchableOpacity onPress={openPostForm}>
+                <PostButton />
+            </TouchableOpacity>
+            
                      
         </View>
     )
