@@ -15,6 +15,7 @@ export default function Home({ navigation }) {
         
         <View>
             <FlatList
+            keyExtractor={(item, index) => index.toString()}
             data={reviewData}
             renderItem={({ item }) =>
                 <TouchableOpacity onPress={() => navigation.navigate('Details', item)}>
@@ -23,7 +24,7 @@ export default function Home({ navigation }) {
                     </Card>
                 </TouchableOpacity>}
              />
-            <Text>{console.log(reviewData + 'this is the end of theeeee data')}</Text>
+            <Text>{console.log(reviewData + 'this is the end of the data')}</Text>
         </View>
    
     )
